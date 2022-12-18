@@ -1,5 +1,7 @@
 // console.log("hello world")
-
+import { navBar } from "./navBar/components/nav.js";
+let header = document.querySelector(".header")
+header.innerHTML = navBar();
 
 
 
@@ -18,7 +20,7 @@ fetch(url)
 .catch((err) => alert("something went wrong"))
 
 function Sortingid(){
-    let sorted = document.querySelector("#id").value
+    let sorted = document.querySelector("#id1").value
     if(sorted == "LTH"){
        bag.sort((a,b)=>a.id-b.id);
     }
@@ -29,7 +31,7 @@ function Sortingid(){
 }
 
 function Sorting(){
-    let sorted = document.querySelector("#price").value
+    let sorted = document.querySelector("#price1").value
     if(sorted == "LTH"){
        
        bag.sort((a,b)=> {

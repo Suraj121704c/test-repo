@@ -23,4 +23,4 @@ function cart_navbar(){
     `
 }
 
-export {cart_navbar};
+export { cart_navbar };

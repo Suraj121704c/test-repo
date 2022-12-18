@@ -167,7 +167,7 @@
   #middleOfTheNavIn img {
     height: 30px;
   }
-  #logoNav > img {
+  #logoNav > a > img {
     height: 60px;
     margin-left: 15px;
     margin-top: 12px;

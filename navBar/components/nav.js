@@ -38,7 +38,7 @@ return `  <div id="navbar">
 
   <div id="language">
     <span>Language</span>
-    <img src="images\expandDown.png" alt="" />
+    <img src="images/expandDown.png" alt="" />
 
     <!-- drop down language  -->
     <div id="langdropdown">
@@ -86,7 +86,7 @@ return `  <div id="navbar">
   <div id="middleOfTheNavIn">
     <div id="logoNav">
       <!-- // redirect index page  -->
-      <img src="images/logo 4.png" alt="" />
+      <a href="index.html"><img src="images/logo 4.png" alt="" /></a>
     </div>
 
     <div id="searchBar">
@@ -246,7 +246,7 @@ return `  <div id="navbar">
     <div id="catagoriesNavTailDropDown">
       <!-- // hover over  -->
       <div id="localwarehouseNav">
-        <span>Local Warehouses</span>
+        <span style="color:black; font-size:18px">Local Warehouses</span>
         <!-- side hide menu  -->
         <div id="localwarehouseOptions" class="parentside">
           <div class="child1">
@@ -301,7 +301,9 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="sportsHoverNav">
-        <span>Sports & Outdoors</span>
+        <a href="page1.html" style="color:black; font-size:18px">
+        <span>Sports & Outdoors
+        </span></a>
         <div class="parentside" id="sportsHoverInsideNav">
           <div class="child1">
             <h4>E-Bikes, Scooters & Wheels</h4>
@@ -353,7 +355,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="smartHomeandgardenNavParent">
-        <span>Smart Home & Garden</span>
+        <a href="page2.html" style="color:black; font-size:18px"><span>Smart Home & Garden</span></a>
         <div id="smartHomeGardenchildNav" class="parentside">
           <div class="child1">
             <h4>Smart Home</h4>
@@ -422,7 +424,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="consumerElectronicsNavSlide">
-        <span>Consumer Electronics</span>
+        <a href="page3.html" style="color:black; font-size:18px"><span>Consumer Electronics</span></a>
         <div id="consumersElectronicsInNav" class="parentside">
           <div class="child1">
             <h4>3D Printers & Accessories</h4>
@@ -478,7 +480,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="tvBoxMiniPcNavInSlide">
-        <span>TV Boxes & Mini PCs</span>
+        <a href="page4.html" style="color:black; font-size:18px"><span>TV Boxes & Mini PCs</span></a>
         <div id="tvboxMiniPcNavIn" class="parentside">
           <div class="child1">
             <h4>Windows Mini PCs</h4>
@@ -499,7 +501,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="computerTabletnavSlideIn">
-        <span>Computers, Tablets & Accessories</span>
+        <a href="page5.html" style="color:black; font-size:18px"><span>Computers, Tablets & Accessories</span></a>
         <div id="computerTabletNavSlideParent" class="parentside">
           <div class="child1">
             <h4>Laptops</h4>
@@ -546,7 +548,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="toysHobbiesNavInSlide">
-        <span>Toys & Hobbies</span>
+        <a href="page6.html" style="color:black; font-size:18px"><span>Toys & Hobbies</span></a>
         <div id="toysHobbiesNavInParentSlide" class="parentside">
           <div class="child1">
             <h4>RC Drones</h4>
@@ -592,7 +594,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="phoneAccessoriesNavSlide">
-        <span>Phones & Accessories</span>
+        <a href="page7.html" style="color:black; font-size:18px"><span>Phones & Accessories</span></a>
         <div id="phoneAccessoriesNavParent" class="parentside">
           <div class="child1">
             <h4>Cell Phones</h4>
@@ -614,7 +616,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="autoMobileNavSlide">
-        <span>Automobiles & Motorcycles</span>
+        <a href="page8.html" style="color:black; font-size:18px"><span>Automobiles & Motorcycles</span></a>
         <div id="automibileNavParentIn" class="parentside">
           <div class="child1">
             <h4>Car DVRs</h4>
@@ -638,7 +640,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="wearableDevicenavSlide">
-        <span>Wearable Devices</span>
+        <a href="page1.html" style="color:black; font-size:18px"><span>Wearable Devices</span></a>
         <div id="wearableDeviceNaveParentSlide" class="parentside">
           <div class="child1">
             <h4>Smart Watches</h4>
@@ -656,7 +658,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="securityCheckNavSlide">
-        <span>Security Systems</span>
+        <a href="page2.html" style="color:black; font-size:18px"><span>Security Systems</span></a>
         <div id="securityCheckNavParentIn" class="parentside">
           <div class="child1">
             <h4>Security Cameras</h4>
@@ -679,7 +681,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="fashionNavSlide">
-        <span>Fashion</span>
+        <a href="page3.html" style="color:black; font-size:18px"><span>Fashion</span></a>
         <div id="fashionNavParentIn" class="parentside">
           <div class="child1">
             <h4>Watches</h4>
