@@ -220,7 +220,7 @@ return `  <div id="navbar">
         </div>
       </div>
       <div id="AddToCartOnNav">
-        <a href="cartNav.html"><img src="images/cart.png" alt="" /></a>
+        <a href="cart_page1.html"><img src="images/cart.png" alt="" /></a>
         <span id="cartCount">0</span>
         <div id="indivCartNav"></div>
       </div>
