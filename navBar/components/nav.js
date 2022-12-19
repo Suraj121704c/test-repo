@@ -713,8 +713,8 @@ return `  <div id="navbar">
       </div>
     </div>
   </div>
-  <h3><a href="./variable/allProduct/allProduct.html">New</a></h3>
-  <h3><a href="./variable/allProduct/allProduct.html">Bestselling</a></h3>
+  <h3><a href="./newArrival.html">New</a></h3>
+  <h3><a href="./bestSeller.html">Bestselling</a></h3>
   <h3><a href="">Brand</a></h3>
   <h3><a href="">Clearance</a></h3>
   <h3><a href="">Deals</a></h3>
