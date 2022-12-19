@@ -107,21 +107,73 @@ let header = document.querySelector(".header")
 header.innerHTML = navBar();
 
 
-let items1 = JSON.parse(localStorage.getItem("cartproduct"));
+let items1 = JSON.parse(localStorage.getItem("cartproduct1"));
     console.log(items1) 
     displayTable(items1);
 
-    function displayTable(array){
-    console.log(array)
-    document.querySelector("#container1").innerHTML="";
-    let count = 0;
-    // let total = array.reduce((acc, ele) =>
-    // let val = +(ele.price.replace("€",""));
+//     function displayTable(array){
+//     console.log(array)
+//     document.querySelector("#container1").innerHTML="";
+//     // let count = 0;
+//     // let total = array.reduce((acc, ele) =>
+//     // let val = +(ele.price.replace("€",""));
 
        
-    //     acc + ele.val, 0
+//     //     acc + ele.val, 0
     
-    // )
+//     // )
+//     array.forEach((element) => {
+                
+//     let div=document.createElement("div")
+
+//     let img=document.createElement("img")
+//     img.setAttribute("src",element.image)
+
+//     let name=document.createElement("h5")
+//     name.innerText=element.name;
+
+//     let detail=document.createElement("p")
+//     detail.innerText=element.pro_detail.substring(1,50);
+
+//     let id=document.createElement("h4")
+//     id.innerText=`id: ${element.id}`;
+    
+//     let price=document.createElement("h4")
+//     price.innerText=`Price:- ${element.price}`;
+
+//     let review=document.createElement("h4")
+//     review.innerText=`rating: ${element.review_num}`;
+
+    // let shiping=document.createElement("p")
+    // shiping.innerText=`ship: ${element.free_ship}`;
+
+
+//     // let button=document.createElement("button")
+//     // button.innerText="remove from cart"
+//     // button.addEventListener("click",function(){
+//     //     my_cart(elem , i)
+//     // //     cartitem.push(element)
+//     // //     localStorage.setItem("cartproduct",JSON.stringify(cartitem))
+//     // })
+
+//     div.append(img,name,detail,id,price,review,shiping)
+//     document.querySelector("#container1").append(div)
+//     });   
+//     // localStorage.clear("cartproduct")
+// }
+
+// function my_cart(elem, i) {
+//     items.splice(i, 1)
+//     displayTable(items)
+//     localStorage.setItem("cartproduct", JSON.stringify(items))
+//   }
+
+
+
+
+function displayTable(array){
+    console.log(array)
+    document.querySelector("#container1").innerHTML="";
     array.forEach((element) => {
                 
     let div=document.createElement("div")
@@ -129,11 +181,11 @@ let items1 = JSON.parse(localStorage.getItem("cartproduct"));
     let img=document.createElement("img")
     img.setAttribute("src",element.image)
 
-    let name=document.createElement("h5")
-    name.innerText=element.name;
+    // let name=document.createElement("h5")
+    // name.innerText=element.name;
 
     let detail=document.createElement("p")
-    detail.innerText=element.pro_detail.substring(1,50);
+    detail.innerText=element.pro_title;
 
     let id=document.createElement("h4")
     id.innerText=`id: ${element.id}`;
@@ -147,24 +199,18 @@ let items1 = JSON.parse(localStorage.getItem("cartproduct"));
     let shiping=document.createElement("p")
     shiping.innerText=`ship: ${element.free_ship}`;
 
+    // let shiping=document.createElement("p")
+    // shiping.innerText=`ship: ${element.free_ship}`;
 
-    let button=document.createElement("button")
-    button.innerText="remove from cart"
-    button.addEventListener("click",function(){
-        my_cart(elem , i)
-    //     cartitem.push(element)
-    //     localStorage.setItem("cartproduct",JSON.stringify(cartitem))
-    })
+
 
     div.append(img,name,detail,id,price,review,shiping)
     document.querySelector("#container1").append(div)
     });   
-    // localStorage.clear("cartproduct")
+    // localStorage.clear("cartproduct2")
 }
 
-function my_cart(elem, i) {
-    items.splice(i, 1)
-    displayTable(items)
-    localStorage.setItem("cartproduct", JSON.stringify(items))
-  }
+
+
+
 </script>

@@ -1,6 +1,6 @@
-import { navBar } from "./navBar/components/nav.js";
-let header = document.querySelector(".header")
-header.innerHTML = navBar();
+// import { navBar } from "./navBar/components/nav.js";
+// let header = document.querySelector(".header")
+// header.innerHTML = navBar();
 
 
 let bag=[];
@@ -87,6 +87,7 @@ function displayTable(array){
 
     let button=document.createElement("button")
     button.innerText="add to cart"
+    button.style.borderRadius = "20px";
     button.addEventListener("click",function(){
         let isPresent = false;
 

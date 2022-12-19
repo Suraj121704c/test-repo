@@ -1,61 +1,62 @@
 // console.log("hello world")
-import { navBar } from "./navBar/components/nav.js";
-let header = document.querySelector(".header")
-header.innerHTML = navBar();
+// import { navBar } from "./navBar/components/nav.js";
+// let header = document.querySelector(".header")
+// header.innerHTML = navBar();
 
 
 
 
-let bag=[];
-let cartitem=JSON.parse(localStorage.getItem("cartproduct"))||[];
+let bag1=[];
+let cartitem=JSON.parse(localStorage.getItem("cartproduct1"))||[];
 
 let url = "https://636b32aeb10125b78fed84ae.mockapi.io/Instuments";
 fetch(url)
 .then((res) =>  res.json())
 .then((data) => {
-    bag = data;
+    bag1 = data;
     // console.log(data)
     displayTable(data)
 })
 .catch((err) => alert("something went wrong"))
 
-function Sortingid(){
-    let sorted = document.querySelector("#id1").value
-    if(sorted == "LTH"){
-       bag.sort((a,b)=>a.id-b.id);
+function Sortingid1(){
+    let sort1 = document.querySelector("#id1").value
+    if(sort1 == "LTH"){
+       bag1.sort((a,b)=>a.id-b.id);
     }
-   if(sorted=="HTL") {
-        bag.sort((a,b)=>b.id-a.id);
+   if(sort1=="HTL") {
+        bag1.sort((a,b)=>b.id-a.id);
     }
-    displayTable(bag)
+    displayTable(bag1)
+
 }
 
-function Sorting(){
-    let sorted = document.querySelector("#price1").value
-    if(sorted == "LTH"){
+function Sorting1(){
+    let sorted1 = document.querySelector("#price1").value
+    if(sorted1 == "LTH"){
        
-       bag.sort((a,b)=> {
+       bag1.sort((a,b)=> {
 
-        let val1 = +(a.price.replace("€",""));
+        let value1 = +(a.price.replace("€",""));
 
-        let val2 = +(b.price.replace("€",""));
+        let value2 = +(b.price.replace("€",""));
         
-         return val1-val2;
+         return value1-value2;
     
     }  );
     }
-   if(sorted == "HTL") {
+   if(sorted1 == "HTL") {
             
-    bag.sort((a,b)=> {
-    let val1 = +(a.price.replace("€",""));
+    bag1.sort((a,b)=> {
+    let value1 = +(a.price.replace("€",""));
 
-    let val2 = +(b.price.replace("€",""));
+    let value2 = +(b.price.replace("€",""));
     
-     return val2-val1;
+     return value2-value1;
     });
        
     }
-    displayTable(bag)
+    displayTable(bag1)
 }
 
 
@@ -91,6 +92,7 @@ function displayTable(array){
 
     let button=document.createElement("button")
     button.innerText="add to cart"
+    button.style.borderRadius = "20px";
     button.addEventListener("click",function(){
         let isPresent = false;
 
@@ -113,7 +115,7 @@ function displayTable(array){
             alert("Item added to the cart")
 
             cartitem.push(element)
-            localStorage.setItem("cartproduct",JSON.stringify(cartitem))
+            localStorage.setItem("cartproduct1",JSON.stringify(cartitem))
 
 
         }

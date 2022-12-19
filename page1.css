@@ -28,6 +28,7 @@
     border-radius: 20px;
     margin-bottom: 5%;
     
+    
    }
    button:hover{
     cursor: pointer;
@@ -35,12 +36,12 @@
     font-weight: bold;
     background-color: rgb(57, 79, 121);
    }
-   #sortprice {
+   #sortprice1 {
     display: flex;
     justify-content: center;
    
 }
- select {
+ .select1 {
     border: 1px solid white;
     margin-left: 5%;
 }

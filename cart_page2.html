@@ -88,7 +88,14 @@ function displayTable(array){
     array.forEach((element) => {
                 
     let div=document.createElement("div")
+    
+    div.addEventListener("click" , () => {
+    localStorage.setItem("item" , JSON.stringify(element))
 
+    window.location.href = "./cart.html";
+
+    })
+    
     let img=document.createElement("img")
     img.setAttribute("src",element.image)
 

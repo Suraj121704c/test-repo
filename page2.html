@@ -16,7 +16,12 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/css/bootstrap.min.css" />
   <script  src="https://kit.fontawesome.com/24c494a6b6.js" crossorigin="anonymous" ></script>
+<!-- footer css -->
+<link rel="stylesheet" href="FOOTER/Footer.css">
+
 </head>
+
+
 <body>
 
     <div class="header">
@@ -29,13 +34,13 @@
         <a style="text-decoration: none;" href="./cart_page2.html">Cart Page</a>
      </span> 
 
-     <select id="id" onchange="Sortingid()">
+     <select class="select2" id="id" onchange="Sortingid()">
         <option value="">search id</option>
         <option value="LTH">Low To High id</option>
         <option value="HTL">High To Low id</option>
      </select>   
 
-    <select id="price" onchange="Sorting()">
+    <select class="select2" id="price" onchange="Sorting()">
         <option value="">search price</option>
         <option value="LTH">Low To High price</option>
         <option value="HTL">High To Low price</option>
@@ -43,6 +48,9 @@
 </div>
 
     <div id="container2"></div>
+    <div class="footerss"></div>
 </body>
 </html>
-<script src="./page2.js" type="module"></script>
+<script src="./page2.js" ></script>
+<script src="./cart_nave1.js" type="module"></script>
+<script src="./footer_module.js"></script>

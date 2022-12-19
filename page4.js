@@ -1,6 +1,6 @@
-import { navBar } from "./navBar/components/nav.js";
-let header = document.querySelector(".header")
-header.innerHTML = navBar();
+// import { navBar } from "./navBar/components/nav.js";
+// let header = document.querySelector(".header")
+// header.innerHTML = navBar();
 
 
  let bag=[];
@@ -15,6 +15,48 @@ fetch(url)
     displayTable(data)
 })
 .catch((err) => alert("something went wrong"))
+
+
+function Sortingid(){
+    let sorted = document.querySelector("#id").value
+    if(sorted == "LTH"){
+       bag.sort((a,b)=>a.id-b.id);
+    }
+   if(sorted=="HTL") {
+        bag.sort((a,b)=>b.id-a.id);
+    }
+    displayTable(bag)
+}
+
+function Sorting(){
+    let sorted = document.querySelector("#price").value
+    if(sorted == "LTH"){
+       
+       bag.sort((a,b)=> {
+
+        let val = +(a.price.replace("€",""));
+
+        let val2 = +(b.price.replace("€",""));
+        
+         return val-val2;
+    
+    }  );
+    }
+   if(sorted == "HTL") {
+            
+    bag.sort((a,b)=> {
+    let val = +(a.price.replace("€",""));
+
+    let val2 = +(b.price.replace("€",""));
+    
+     return val2-val;
+    });
+       
+    }
+    displayTable(bag)
+}
+
+
 
 function displayTable(array){
     console.log(array)
